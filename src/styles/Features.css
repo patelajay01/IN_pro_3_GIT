@@ -1,0 +1,23 @@
+.features {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-item {
+  background: white;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.feature-item h3 {
+  color: #00ffcc;
+}
