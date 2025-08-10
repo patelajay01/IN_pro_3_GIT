@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules (if Node.js project)
+node_modules/
+
+# Ignore Python cache (if Python project)
+__pycache__/
