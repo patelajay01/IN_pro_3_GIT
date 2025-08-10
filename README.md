@@ -1,3 +1,5 @@
+# DevOps Internship - Task 3
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +70,82 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+## Objective
+To manage a DevOps project using Git best practices.  
+This includes version control, branching, pull requests, and proper documentation.
+
+---
+
+## Tools Used
+- Git
+- GitHub
+- Markdown for documentation
+
+---
+
+## Branch Strategy
+- **main** → Stable production code
+- **dev** → Development branch
+- **feature/** → For individual features
+
+---
+
+## Steps Performed
+
+1. Initialized a local Git repository using:
+git init
+
+
+2. Added all files to staging and committed:
+git add .
+git commit -m "Initial commit"
+
+
+3. Created a new repository on GitHub and connected it:
+git remote add origin <repo_url>
+git branch -M main
+git push -u origin main
+
+
+4. Created additional branches:
+git checkout -b dev
+git push -u origin dev
+
+git checkout -b feature/login
+git push -u origin feature/login
+
+
+
+5. Made changes in feature branches, committed, and pushed them:
+git add .
+git commit -m "Added login feature"
+git push origin feature/login
+
+
+6. Created Pull Requests on GitHub to merge feature branches into `dev`, and then `dev` into `main`.
+
+7. Added `.gitignore` file to avoid unnecessary files being pushed:
+node_modules/
+pycache/
+.DS_Store
+Thumbs.db
+
+
+
+8. Created a tag for version control:
+git tag v1.0
+git push origin v1.0
+
+
+9. Documented all tasks in this `README.md` file.
+
+---
+
+## Notes
+- Always create a new branch for each feature or change.
+- Use pull requests for merging instead of directly merging to `main`.
+- Keep commit messages short and meaningful.
